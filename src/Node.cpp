@@ -123,13 +123,13 @@ void Node::setTransformation(Transformation *transformation)
 }
 
 // Getter for Evaluation
-std::string Node::getEvaluation()
+double Node::getEvaluation()
 {
     return Evaluation;
 }
 
 // Setter for Evaluation
-void Node::setEvaluation(std::string value)
+void Node::setEvaluation(double value)
 {
     Evaluation = value;
 }

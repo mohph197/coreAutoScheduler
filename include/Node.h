@@ -23,7 +23,7 @@ class Node{
         SmallVector<Node*, 2> ChildrenNodes; // list of child nodes
         CodeIR* TransformedCodeIr; // code IR after transformation
         Transformation* TransformationApplied; // current transformation applied
-        std::string Evaluation; // evaluation score of the node
+        double Evaluation; // evaluation score of the node
         int CurrentStage;
     public:
         Node(CodeIR *CodeIr, int stage);
@@ -64,10 +64,10 @@ class Node{
         void setTransformation(Transformation* transformation);
 
         // Getter for Evaluation
-        std::string  getEvaluation();
+        double getEvaluation();
 
         // Setter for Evaluation
-        void setEvaluation(std::string  value);
+        void setEvaluation(double value);
         // Getter for CurrentStage
         int  getCurrentStage();
 
